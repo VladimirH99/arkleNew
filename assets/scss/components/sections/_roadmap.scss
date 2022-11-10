@@ -1,2 +1,72 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.roadmap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.roadmap-head{
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: $primary-orange;
+    border-radius: 60px;
+}
+.roadmap-image{
+}
+.roadmap-image__img{
+    width: 100%;
+    border-radius: 60px;
+}
+.roadmap-item{
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 60px;
+    transition: 0.5s;
+    &:hover{
+        background-color: $color-overflow;
+    }
+    &:hover>.roadmap-item__text{
+        display: inline;
+        color: $primary-black;
+    }
+    .roadmap-item__text{
+        color: transparent;
+        margin: 0;
+        transition: 1s;
+        font-weight: 800;  
+    }
+}
+.roadmap-item__img{
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+}
+.one{
+    bottom: 22%;
+    left: 5vw;
+}
+.two{
+    bottom: 5%;
+    left: 35vw;
+}
+.three{
+    bottom: 22%;
+    right: 8vw;
+}
+.four{
+    top: 40%;
+    right: 1vw;
+}
+.five{
+    top: 35%;
+    left: 35vw;
+}
+.six{
+    top: 35%;
+    left: 12vw;
+}
