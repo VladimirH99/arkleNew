@@ -372,6 +372,7 @@ body {
       flex-direction: column;
 
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .team-head {
@@ -430,6 +431,10 @@ body {
 
 .bi {
   margin-bottom: 10px;
+
+  -webkit-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
 
   color: #1d9bf0;
 

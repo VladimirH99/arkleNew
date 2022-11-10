@@ -5,6 +5,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 .team-head{
     display: flex;
@@ -43,6 +44,7 @@
     font-size: 20px;
     color: #1D9BF0;
     margin-bottom: 10px;
+    transition: 0.5s;
     &:hover{
         transform: scale(1.2);
     }
