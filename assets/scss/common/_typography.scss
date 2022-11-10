@@ -1,0 +1,12 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  font-family: $font-main;
+  font-size: $font-size;
+}

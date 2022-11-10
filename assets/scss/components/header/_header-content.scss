@@ -1,0 +1,66 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-content{
+    position: relative;
+    width: 100%;
+    margin: 30px 0 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    &__background{
+        width: 100%;
+    }
+}
+
+.header-content__eclipse{
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 60px;
+    transition: 0.5s;
+    
+    &:hover{
+        background-color: $color-overflow;
+    }
+    &:hover>p{
+        display: inline;
+        color: $primary-black;
+    }
+}
+p{
+    color: transparent;
+    margin: 0;
+    transition: 1s;
+    font-weight: 800;  
+}
+.hippodrome{
+    bottom: 13%;
+    left: 42vw;
+
+}
+.stable{
+    bottom: 44%;
+    left: 13vw;
+}
+.bar{
+    bottom: 44%;
+    right: 0vw; 
+    max-width: 250px;
+}
+.ground{
+    top: 15%;
+    left: 3vw;
+}
+.market{
+    top: 10%;
+    left: 40vw;
+}
+.header-content__horse{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-right: 10px;
+}

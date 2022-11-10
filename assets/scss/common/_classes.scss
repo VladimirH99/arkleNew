@@ -1,0 +1,9 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+
+body{
+    margin: 0;
+    padding: 45px 8vw;
+    background-color: $background;
+}

@@ -1,0 +1,171 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.navbar{
+background-color: $primary-black;
+width: 100%;
+height: 100px;
+border-radius: 60px;
+display: flex;
+justify-content: space-between;
+}
+
+.navbar-logo{
+padding: 30px 0px 41px 50px;
+}
+.navbar-logo__img{
+width: 135px;
+}
+
+.navbar-links{
+display: flex;
+align-items: center;
+}
+.link{
+margin: 0 20px;
+text-decoration: none;
+color: $color-text;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+font-style: normal;
+transition: 0.5s;
+&:hover{
+    color: $primary-orange;
+    transform: scale(1.1);
+}
+}
+.navbar-mint{
+width: 219px;
+background-color: $primary-orange;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 60px;
+margin: 16px 20px 17px 0;
+cursor: pointer;
+&__link{
+        font-weight: 800;
+    }
+&:hover>.navbar-mint__link{
+    color: white;
+    transform: scale(1.1);
+}
+}
+
+// .navbar-mint__link{
+//     font-weight: 800;
+//     &:hover{
+//         color: white;
+//         transform: scale(1.1);
+        
+//     }
+// }
+
+// .header-navbar {
+//   display: grid;
+//   align-items: center;
+//   letter-spacing: 0.1em;
+//   justify-items: end;
+
+//   &__list {
+//     @include md-min {
+//       display: grid;
+//       justify-content: flex-end;
+//       width: 100%;
+//       gap: $gap;
+//       grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+//       @include unlist(0 (-$gap-sm) 0 0);
+//     }
+//     @include md {
+//       position: absolute;
+//       top: 100%;
+//       right: $gap;
+//       display: none;
+//       text-align: right;
+//       background-color: rgba($color-gray-dark, 0.9);
+//       @include box-shadow;
+//       @include unlist;
+//     }
+//   }
+
+//   &__item {
+//     @include md {
+//       margin: $gap $gap-sm;
+//     }
+//   }
+
+//   &__link {
+//     display: block;
+//     transition: color 0.5s;
+//     font-size: 1.125rem;
+
+//     @include md-min {
+//       padding: $gap $gap-sm;
+//     }
+//     @include md {
+//       padding: $gap-sm $gap;
+//     }
+
+//     &:hover,
+//     &:focus {
+//       color: $color-accent;
+//     }
+//   }
+
+//   &__btn {
+//     position: relative;
+//     width: 30px;
+//     height: 23px;
+//     margin: $gap 0;
+//     cursor: pointer;
+//     transition: 0.5s ease-in-out;
+//     transform: rotate(0deg);
+//     @include md-min {
+//       display: none;
+//     }
+
+//     &-row {
+//       position: absolute;
+//       left: 0;
+//       display: block;
+//       width: 100%;
+//       height: 3px;
+//       transition: 0.25s ease-in-out;
+//       transform: rotate(0deg);
+//       opacity: 1;
+//       border-radius: 3px;
+//       background: $color-light;
+
+//       &:nth-of-type(1) {
+//         top: 0;
+//       }
+
+//       &:nth-of-type(2) {
+//         top: 9px;
+//       }
+
+//       &:nth-of-type(3) {
+//         top: 18px;
+//       }
+//     }
+
+//     &--active span {
+//       &:nth-of-type(1) {
+//         top: 9px;
+//         transform: rotate(135deg);
+//       }
+
+//       &:nth-of-type(2) {
+//         left: -30px;
+//         opacity: 0;
+//       }
+
+//       &:nth-of-type(3) {
+//         top: 9px;
+//         transform: rotate(-135deg);
+//       }
+//     }
+//   }
+// }
