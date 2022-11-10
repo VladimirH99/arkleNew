@@ -1,2 +1,49 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.team{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.team-head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: $primary-red;
+    border-radius: 60px;
+    padding: 20px 0;
+    color: white;
+    margin-bottom: 30px;
+}
+.team-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.team-items__item{
+    width: 100%;
+    display: flex;
+    background-color: $primary-black;
+    color: white;
+    border-radius: 60px;
+    padding: 10px 0;
+    &:nth-of-type(-n + 2){
+        margin-right: 30px;
+    }
+}
+.team-items__img{
+    margin: 0 25px;
+    width: 104px;
+    height: 104px;
+    border-radius: 60px;
+}
+.bi{
+    font-size: 20px;
+    color: #1D9BF0;
+    margin-bottom: 10px;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
