@@ -25,12 +25,12 @@
     &:hover{
         background-color: $color-overflow;
     }
-    &:hover>p{
+    &:hover>.header-content__text{
         display: inline;
         color: $primary-black;
     }
 }
-p{
+.header-content__text{
     color: transparent;
     margin: 0;
     transition: 1s;
