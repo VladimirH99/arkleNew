@@ -28,11 +28,14 @@
     display: flex;
     background-color: $primary-black;
     color: white;
-    border-radius: 60px;
+    border-radius: 40px;
     padding: 10px 0;
     &:nth-of-type(-n + 2){
         margin-right: 30px;
     }
+}
+.team-items__name{
+    font-size: 20px;
 }
 .team-items__img{
     margin: 0 25px;

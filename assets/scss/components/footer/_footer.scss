@@ -1,60 +1,44 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-// .footer {
-//     padding: ($gap * 2.5) $gap ($gap * 3.5);
-//     text-align: center;
-//     background-color: $color-primary;
-//     &__container {
-//       @extend %container;
-//     }
-  
-//     &__social {
-//       position: relative;
-//       display: grid;
-//       justify-content: center;
-//       margin-bottom: $gap-x2;
-//       grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 
-//       &::after {
-//         position: absolute;
-//         bottom: -$gap;
-//         left: calc(50% - 75px / 2);
-//         width: 75px;
-//         height: 2px;
-//         content: "";
-//         background-color: rgba($color-light, 0.1);
-//       }
-  
-//       a {
-//         display: block;
-//         padding: $gap-sm;
-//         transition: color 0.5s;
-  
-//         &:hover,
-//         &:focus {
-//           color: $color-accent;
-//         }
-//       }
-  
-//       .fab {
-//         font-size: 36px;
-//       }
-//     }
-  
-//     &__end {
-//       span {
-//         &:nth-of-type(1) {
-//           margin-right: -0.5em;
-//           letter-spacing: 0.33em;
-//           font-weight: 100;
-//         }
-  
-//         &:nth-of-type(2) {
-//           letter-spacing: 0.05em;
-//           color: $color-gray-light;
-//           font-weight: 700;
-//         }
-//       }
-//     }
-//   }
+
+footer{
+    background-color: $primary-black;
+    padding: 80px 0;
+    border-radius: 40px;
+}
+.footer-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 120px;
+    &>img{
+        width: 135px;
+    }
+}
+.footer-items__menu{
+&>a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    &:hover{
+        color: $primary-orange;
+    }
+}
+}
+.footer-items__links{
+&>a{
+    &>.bi{
+        color: white;
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+}
+}
+.copyright{
+    color: white;
+    margin-left: 70px;
+}
